@@ -4,7 +4,7 @@
 
 [![Award](https://img.shields.io/badge/2025%20캡스톤디자인%20경진대회-심화부문%20은상-C0C0C0)](#결과)
 [![Paper](https://img.shields.io/badge/한국정보기술학회-하계학술대회%20논문%20공저-blue)](#결과)
-[![Stack](https://img.shields.io/badge/Spring%20Boot%203-Java%2017-6DB33F?logo=springboot&logoColor=white)](#기술-선택)
+[![Stack](https://img.shields.io/badge/Spring%20Boot%203-Java%2017-6DB33F?logo=springboot&logoColor=white)](#기술-스택)
 [![DB](https://img.shields.io/badge/MongoDB-document%20model-47A248?logo=mongodb&logoColor=white)](#설계-판단)
 
 6인 학생 팀으로 개발한 AI 차량 어시스턴트에서 **백엔드와 데이터베이스를 담당한 저장소**입니다.
@@ -61,20 +61,12 @@
 6인 팀이라 프론트·장치 쪽과 필드 이름 하나로도 어긋납니다.
 OpenAPI 3.0으로 요청·응답과 오류 응답을 적어 두고 그것을 기준으로 맞췄습니다.
 
-## 이 저장소가 증명하는 범위
+## 맡은 범위
 
-팀 전체 시스템에는 졸음 감지와 차량 매뉴얼 기반 RAG 질의응답 컴포넌트가 포함됩니다.
-**RAG 모델과 검색 파이프라인은 팀의 별도 컴포넌트이며 이 저장소에 포함되지 않습니다.**
-여기서 확인할 수 있는 제 기여 범위는 **차량 도메인 백엔드, MongoDB 문서 모델, 사용자·카카오 로그인 흐름,
-주행 데이터 집계**입니다.
+팀 전체 시스템은 졸음 감지 장치, 모바일 앱, 차량 매뉴얼 질의응답으로 이뤄져 있습니다.
+이 저장소는 그중 제가 맡은 **차량 도메인 백엔드, MongoDB 문서 모델, 카카오 로그인 흐름, 주행 데이터 집계**입니다.
 
-> RAG를 직접 구축한 사례는 [benefit-compass](https://github.com/jgjoe/benefit-compass)에 있습니다 —
-> 온통청년·정부24 13,589개 정책을 17,609개 청크로 통합하고 임베딩 누락 0건을 검증했습니다.
-> 검색 순서 조정 모델은 실제 서비스 조건 비교에서 일부 결과를 개선했지만 다른 핵심 검색 품질을 악화시켜
-> production에 채택하지 않았습니다.
-
-> 이 백엔드에 **SSE 기반 실시간 알림**을 얹은 확장본은 별도 저장소
-> [gil_ALERT](https://github.com/jgjoe/gil_ALERT)에 있습니다.
+> 이 백엔드에 **SSE 기반 실시간 알림**을 얹은 확장본은 [gil_ALERT](https://github.com/jgjoe/gil_ALERT)에 있습니다.
 
 ## 기술 스택
 
@@ -101,13 +93,6 @@ cd gildongE
 ```
 
 API 문서: `gildongE/src/main/resources/static/openapi.yaml`
-
-## 범위와 조건
-
-- **학기 프로젝트 프로토타입입니다.** 카카오 사용자 조회·등록까지 구현했고 JWT 발급과 사용자별 인가 정책은 넣지 않았습니다(`SecurityConfig` 전체 허용). 운영 환경이라면 토큰 기반 인증이 선행되어야 합니다.
-- 성능·부하 지표는 측정하지 않았습니다.
-- 이 저장소에는 배포 설정이 없습니다. 실행은 로컬 기준이고, 팀 시연 환경 구성은 저장소 밖에서 이뤄졌습니다.
-- 측정한 수치가 있는 프로젝트는 위 benefit-compass와 [Fridge-D-Day](https://github.com/jgjoe/Fridge-D-Day)입니다.
 
 ## 만든 사람
 
