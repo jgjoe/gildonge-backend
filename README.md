@@ -66,7 +66,7 @@ OpenAPI 3.0으로 요청·응답과 오류 응답을 적어 두고 그것을 기
 팀 전체 시스템은 졸음 감지 장치, 모바일 앱, 차량 매뉴얼 질의응답으로 이뤄져 있습니다.
 이 저장소는 그중 제가 맡은 **차량 도메인 백엔드, MongoDB 문서 모델, 카카오 로그인 흐름, 주행 데이터 집계**입니다.
 
-> 이 백엔드에 **SSE 기반 실시간 알림**을 얹은 확장본은 [gil_ALERT](https://github.com/jgjoe/gil_ALERT)에 있습니다.
+> 이 백엔드에 **SSE 기반 실시간 알림**을 얹은 확장본은 [gildonge-alert](https://github.com/jgjoe/gildonge-alert)에 있습니다.
 
 ## 기술 스택
 
